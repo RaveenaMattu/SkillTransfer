@@ -27,10 +27,10 @@ function Home() {
           </p>
           
           <div className="hero-images">
-            <img src="image 1.png" alt="Team member" className="hero-image" />
-            <img src="image 2.png" alt="Team member" className="hero-image" />
-            <img src="image 3.png" alt="Team member" className="hero-image" />
-            <img src="image 4.png" alt="Team member" className="hero-image" />
+            <img src="personna1.png" alt="Team member" className="hero-image" />
+            <img src="personna2.png" alt="Team member" className="hero-image" />
+            <img src="personna3.png" alt="Team member" className="hero-image" />
+            <img src="personna4.png" alt="Team member" className="hero-image" />
           </div>
         </div>
       
