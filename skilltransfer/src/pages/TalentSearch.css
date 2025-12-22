@@ -80,9 +80,9 @@
 .content-title {
   color: #000;
   font-family: Barlow, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 2.1em !important;
-  font-weight: 700;
-  margin: 0;
+  font-size: 2.1em;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .content-description {
@@ -212,7 +212,7 @@
 .step-description {
   color: #000;
   font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 400;
   margin: 0;
 }
@@ -337,6 +337,10 @@
   .what-we-do-content,
   .process-intro {
     flex-direction: column;
+    gap: 40px;
+  }
+  .what-we-do-left{
+    margin: 0 auto;
   }
   
   .partner-section {
@@ -348,14 +352,74 @@
   .talent-hero-title,
   .content-title,
   .partner-title {
-    font-size: 32px;
+    font-size: 3em;
+  }
+  .what-we-do-section {
+    padding: 50px;
+  }
+  .what-we-do-content {
+    gap: 40px;
+  }
+  .what-we-do-left .content-title {
+    font-size: 1.9em;
+    text-align: center;
+  }
+  .talent-services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 560px));
+
+  }
+  .talent-service-card {
+  padding: 30px 40px;
+  }
+
+  .section-title {
+    font-size: 2em;
   }
   
-  .section-title {
+  .step-number {
+    font-size: 3.5em;
+  }
+ .process-section {
+    padding: 50px;
+  }
+  .process-intro {
+    gap: 40px;
+    margin: 40px 0 60px;
+  }
+  .process-intro .content-title {
+    font-size: 1.9em;
+    text-align: center;
+  }
+  .industries-grid {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }   
+}
+
+@media (max-width: 550px) {
+  .talent-hero {
+    padding: 50px 20px;
+    padding-top: 0;
+  }
+  .talent-hero-title {
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
+  .what-we-do-section h2, .process-content h2, .partner-content h2, .industries-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .talent-section-title {
     font-size: 48px;
   }
   
   .step-number {
     font-size: 64px;
+  }
+  .industry-icon {
+    width: 60px;
+    height: 60px;
   }
 }

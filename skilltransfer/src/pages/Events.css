@@ -1,0 +1,104 @@
+.events-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding: 40px 150px;
+}
+
+/* LEFT – Resources */
+.resources-section {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.resources-section h2 {
+  margin-bottom: 25px;
+}
+
+.resource-row {
+  display: grid;
+  grid-template-columns: 3fr 2.5fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resource-title {
+  font-weight: 500;
+}
+
+.resource-desc {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.resource-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.resource-link {
+  margin-top: 8px;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+/* RIGHT – Calendar + Events */
+.calendar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calendar-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-title {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 600;
+}
+.event-date {
+  font-weight: 600;
+  color: #6b7280;
+}
+.event-card {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.register-btn {
+  /* background: #036627; */
+  color: #036627;
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+
+/* Mobile */
+@media (max-width: 1100px) {
+  .events-layout {
+    grid-template-columns: 1fr;
+    padding: 20px 80px;
+  }
+}
+@media (max-width: 500px) {
+  .events-layout {
+    padding: 20px;
+  }
+}

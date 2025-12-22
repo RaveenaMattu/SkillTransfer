@@ -108,7 +108,7 @@ function Contracting() {
       <section className="why-partner-section">
         <div className="why-partner-bg">
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/dd8f714ded8523c7a4f672c181c23680f02ebb7f?width=1194" 
+            src="step2.png" 
             alt="" 
           />
         </div>

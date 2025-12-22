@@ -16,7 +16,7 @@ function Coaching() {
           <p className="coaching-hero-description">
             At SkillTransfer Academy, our coaching programs are built to inspire growth from within. Our expert coaches help you define goals, strengthen skills, and achieve measurable outcomes.
           </p>
-          <button className="cta-btn">Book Consultation</button>
+          <button className="cta-btn" onClick={() => window.open("https://forms.gle/NygFY2QA3te5eXHG9", "_blank")}>Book Consultation</button>
         </div>
         <div className="coaching-hero-image">
           <img 
@@ -108,9 +108,9 @@ function Coaching() {
           </p>
           
           <div className="cta-buttons">
-            <button className="cta-btn-secondary">Access Our Free Resources</button>
-            <button className="cta-btn-primary">Schedule a Session</button>
-            <button className="cta-btn-primary">Download Brochure</button>
+            <button className="cta-btn-secondary" onClick={() => window.open("/events")}>Access Our Free Resources</button>
+            <button className="cta-btn-primary" onClick={() => window.open("https://forms.gle/NygFY2QA3te5eXHG9", "_blank")}>Schedule a Session</button>
+            {/* <button className="cta-btn-primary">Download Brochure</button> */}
           </div>
         </div>
       </section>

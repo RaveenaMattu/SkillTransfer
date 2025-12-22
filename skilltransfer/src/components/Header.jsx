@@ -48,7 +48,7 @@ function Header() {
             { path: "/coaching", label: "Coaching" },
             { path: "/talent-search", label: "Talent Search" },
             { path: "/contracting", label: "Contracting" },
-            { path: "/resources", label: "Free Resources & Events" },
+            { path: "/events", label: "Free Resources & Events" },
           ].map((item) => (
             <a
               key={item.path}

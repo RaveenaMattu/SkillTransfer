@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Coaching from './pages/Coaching';
 import TalentSearch from './pages/TalentSearch';
 import Contracting from './pages/Contracting';
+import Events from './pages/Events';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/coaching" element={<Coaching />} />
           <Route path="/talent-search" element={<TalentSearch />} />
           <Route path="/contracting" element={<Contracting />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
       </div>
     </Router>

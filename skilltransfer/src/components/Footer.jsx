@@ -7,10 +7,9 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-left">
-            <h3 className="footer-title">The SkillTransfer Academy</h3>
+            <h3 className="footer-title">The SkillTransfer Agency</h3>
             <p className="footer-description">
-              A Canadian AI company providing advanced automated solution for
-              SMB's
+              Empowering individuals with advanced learning and career development solutions.
             </p>
 
             <div className="social-icons">
@@ -32,8 +31,8 @@ function Footer() {
               </a>
 
               {/* Instagram */}
-              {/* <a
-                href="https://instagram.com"
+              <a
+                href="https://www.instagram.com/levelup_with_siva/?igsh=bHFzeWpqdXY1bW85&utm_source=qr#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
@@ -46,7 +45,7 @@ function Footer() {
                 >
                   <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 11-.001 2.501A1.25 1.25 0 0116.5 8.25z" />
                 </svg>
-              </a> */}
+              </a>
 
               {/* LinkedIn */}
               <a
@@ -63,6 +62,22 @@ function Footer() {
                 >
                   <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.5V24h-4v-7.8c0-1.9-.1-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-4V8z" />
                 </svg>
+              </a>
+                <a
+                href="https://wa.me/16477242624"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                  <svg
+                    className="contact-icon"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M12.04 2C6.58 2 2.15 6.43 2.15 11.89c0 2.09.68 4.03 1.82 5.62L2 22l4.64-1.51c1.52.83 3.25 1.3 5.08 1.3 5.46 0 9.89-4.43 9.89-9.89S17.5 2 12.04 2zm5.73 14.25c-.24.67-1.39 1.31-1.95 1.39-.5.08-1.12.11-1.81-.11-.42-.14-.96-.31-1.65-.61-2.91-1.26-4.8-4.19-4.95-4.4-.14-.2-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.52.24.59.82 2.03.89 2.18.07.15.11.33.02.53-.09.2-.14.33-.27.51-.14.17-.29.38-.41.51-.14.14-.28.29-.12.57.16.29.71 1.17 1.52 1.9 1.05.94 1.94 1.23 2.23 1.37.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.73.82 2.03.97.3.15.5.23.57.36.08.13.08.69-.16 1.36z" />
+                  </svg>
               </a>
             </div>
           </div>
@@ -102,7 +117,7 @@ function Footer() {
                 </svg>
                 <span>+1 (647) 724-2624</span>
               </div>
-              <a
+              {/* <a
                 href="https://wa.me/16477242624"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,7 +136,7 @@ function Footer() {
 
                   <span>+1 (647) 724-2624</span>
                 </div>
-              </a>
+              </a> */}
 
               <div className="contact-item">
                 <svg
@@ -161,7 +176,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p className="copyright">
-            © 2025 The SkillTransfer Academy. All Rights Reserved.
+            © 2025 The SkillTransfer Agency. All Rights Reserved.
           </p>
           <div className="footer-links">
             <a href="privacy.jsx" className="footer-link">

@@ -1,5 +1,5 @@
 .contracting-page {
-  background: #FFF;
+  background: #fff;
 }
 
 .contracting-hero {
@@ -27,7 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.70);
+  background: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
 
@@ -48,11 +48,11 @@
 }
 
 .contracting-hero-title .primary-text {
-  color: #03045E;
+  color: #03045e;
 }
 
 .contracting-hero-title .highlight {
-  color: #0077B6;
+  color: #0077b6;
 }
 
 .contracting-hero-description {
@@ -69,8 +69,8 @@
   width: 481px;
   height: 57px;
   border-radius: 10px;
-  background: #03045E;
-  color: #FFF;
+  background: #03045e;
+  color: #fff;
   font-family: Barlow, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 1.1em;
   font-weight: 500;
@@ -80,7 +80,7 @@
 }
 
 .contracting-cta-btn:hover {
-  background: #0077B6;
+  background: #0077b6;
 }
 
 .what-we-offer-contracting {
@@ -111,7 +111,7 @@
 .contracting-service-card {
   padding: 36px 31px;
   border-radius: 15px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 0 20px 15px rgba(192, 192, 192, 0.25);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -142,6 +142,7 @@
   padding: 100px 150px;
   max-width: 1728px;
   margin: 0 auto;
+  background: #f9f9f9;
 }
 
 .contracting-process-grid {
@@ -158,8 +159,8 @@
 }
 
 .process-step-number {
-  color: #0077B6;
-  font-family: 'Helvetica Neue', -apple-system, Roboto, Helvetica, sans-serif;
+  color: #0077b6;
+  font-family: "Helvetica Neue", -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 96px;
   font-weight: 700;
   letter-spacing: -7.68px;
@@ -189,7 +190,7 @@
 
 .why-partner-section {
   position: relative;
-  background: #00013B;
+  background: #00013b;
   padding: 100px 50px;
   display: flex;
   align-items: center;
@@ -207,6 +208,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.3;
 }
 
 .why-partner-content {
@@ -224,9 +226,9 @@
 }
 
 .benefits-list li {
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 40px;
   position: relative;
@@ -237,12 +239,12 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #0077B6;
+  color: #0077b6;
   font-size: 30px;
 }
 
 .flexible-team-section {
-  background: #DDEEFF;
+  background: #ddeeff;
   padding: 80px 150px;
   display: flex;
   justify-content: space-between;
@@ -280,14 +282,15 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-btn-primary {
   width: 200px;
   height: 60px;
   border-radius: 10px;
-  background: #03045E;
-  color: #FFF;
+  background: #03045e;
+  color: #fff;
   font-family: Barlow, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 500;
@@ -297,16 +300,16 @@
 }
 
 .team-btn-primary:hover {
-  background: #0077B6;
+  background: #0077b6;
 }
 
 .team-btn-secondary {
-  width: 150px;
+  width: 200px;
   height: 60px;
   border-radius: 10px;
-  border: 2px solid #03045E;
-  background: #FFF;
-  color: #03045E;
+  border: 2px solid #03045e;
+  background: #fff;
+  color: #03045e;
   font-family: Barlow, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 500;
@@ -315,21 +318,37 @@
 }
 
 .team-btn-secondary:hover {
-  background: #03045E;
-  color: #FFF;
+  background: #03045e;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
   .offer-content {
     flex-direction: column;
+    gap: 40px;
   }
-  
+
   .why-partner-content {
-    margin-left: 0;
+    margin: 0 auto;
   }
-  
+
   .flexible-team-section {
     flex-direction: column;
+    padding: 80px 50px;
+  }
+  .offer-left {
+    margin: 0 auto;
+  }
+  .what-we-offer-contracting {
+    padding: 80px 50px;
+  }
+  .contracting-services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 560px));
+    justify-content: center;
+  }
+
+  .why-partner-bg {
+    display: none;
   }
 }
 
@@ -338,21 +357,23 @@
     height: auto;
     padding: 100px 0;
   }
-  
+
   .contracting-hero-title {
     font-size: 32px;
     line-height: 45px;
   }
-  
+
   .contracting-cta-btn {
     width: 100%;
     max-width: 481px;
   }
-  
+
   .section-title {
     font-size: 48px;
   }
-  
+  .contracting-process-section {
+    padding: 50px;
+  }
   .process-step-number {
     font-size: 64px;
   }
