@@ -34,7 +34,7 @@ function Home() {
           </div>
         </div>
       
-      
+      </section>
       <section className="services-section">
         <h2 className="home-section-title">OUR SERVICES</h2>
         
@@ -57,7 +57,6 @@ function Home() {
             <a href="/contracting" className="service-link">Learn More</a>
           </div>
         </div>
-      </section>
       </section>
       <section className="why-choose-section">
         <div className="why-choose-bg">
