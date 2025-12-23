@@ -1,33 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
 
-  const navRef = useRef(null);
-  const dropdownRef = useRef(null);
-  const actionsRef = useRef(null);
+  const contactRef = useRef(null);
 
-  // Close menu & dropdown on outside click
+  // Close contact dropdown on outside click
   useEffect(() => {
     function handleClickOutside(e) {
       if (
-        navRef.current &&
-        !navRef.current.contains(e.target) &&
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target) &&
-        actionsRef.current &&
-        !actionsRef.current.contains(e.target)
+        contactRef.current &&
+        !contactRef.current.contains(e.target)
       ) {
-        setMenuOpen(false);
         setContactOpen(false);
       }
     }
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -41,34 +35,31 @@ function Header() {
         </div>
 
         {/* Navigation */}
-        <nav ref={navRef} className={`main-nav ${menuOpen ? "show" : ""}`}>
-          {[
-            { path: "/", label: "About" },
-            { path: "/coaching", label: "Coaching" },
-            { path: "/talent-search", label: "Talent Search" },
-            { path: "/contracting", label: "Contracting" },
-            { path: "/events", label: "Free Resources & Events" },
-          ].map((item) => (
-            <a
-              key={item.path}
-              href={item.path}
-              className={`nav-link ${
-                window.location.pathname === item.path ? "active" : ""
-              }`}
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
+        <nav className={`main-nav ${menuOpen ? "show" : ""}`}>
+          <NavLink to="/" className="nav-link" onClick={() => setMenuOpen(false)}>
+            About
+          </NavLink>
+          <NavLink to="/coaching" className="nav-link" onClick={() => setMenuOpen(false)}>
+            Coaching
+          </NavLink>
+          <NavLink to="/talent-search" className="nav-link" onClick={() => setMenuOpen(false)}>
+            Talent Search
+          </NavLink>
+          <NavLink to="/contracting" className="nav-link" onClick={() => setMenuOpen(false)}>
+            Contracting
+          </NavLink>
+          <NavLink to="/events" className="nav-link" onClick={() => setMenuOpen(false)}>
+            Free Resources & Events
+          </NavLink>
         </nav>
 
-        {/* Right side actions */}
-        <div className="header-actions" ref={actionsRef}>
+        {/* Right actions */}
+        <div className="header-actions">
           {/* Contact Dropdown */}
-          <div className="contact-dropdown" ref={dropdownRef}>
+          <div className="contact-dropdown" ref={contactRef}>
             <button
               className="contact-btn"
-              onClick={() => setContactOpen(!contactOpen)}
+              onClick={() => setContactOpen((prev) => !prev)}
             >
               Contact
             </button>
@@ -79,6 +70,7 @@ function Header() {
                   href="https://forms.gle/NygFY2QA3te5eXHG9"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => setContactOpen(false)}
                 >
                   Job Seeker
                 </a>
@@ -86,6 +78,7 @@ function Header() {
                   href="https://forms.gle/3kdqp5haJJMneg1z9"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => setContactOpen(false)}
                 >
                   Business
                 </a>
@@ -96,7 +89,7 @@ function Header() {
           {/* Hamburger */}
           <div
             className={`hamburger ${menuOpen ? "open" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen((prev) => !prev)}
           >
             <span></span>
             <span></span>
