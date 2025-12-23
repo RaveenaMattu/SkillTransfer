@@ -14,7 +14,7 @@ function Coaching() {
             <span className="highlight">Empowering</span> Professionals Through Transformational Coaching
           </h1>
           <p className="coaching-hero-description">
-            At SkillTransfer Academy, our coaching programs are built to inspire growth from within. Our expert coaches help you define goals, strengthen skills, and achieve measurable outcomes.
+            At SkillTransfer Agency, our coaching programs are built to inspire growth from within. Our expert coaches help you define goals, strengthen skills, and achieve measurable outcomes.
           </p>
           <button className="cta-btn" onClick={() => window.open("https://forms.gle/NygFY2QA3te5eXHG9", "_blank")}>Book Consultation</button>
         </div>

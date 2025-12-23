@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import "./Events.css";
 
 const RESOURCES_SHEET =
-  "https://opensheet.elk.sh/1XBYhosWPqux92UmHMLZwHzCIoxYdMZnxYET0hSbHDkA/Sheet1";
-const CALENDAR_ID = "theskilltransferacademy@gmail.com";
-const API_KEY = "AIzaSyDOLcPJ3Ds3pjYWmLdKIkenZKBivL5zJEk";
+  "https://opensheet.elk.sh/1fgMd-NbDAC6D9Oc6DKeOY1c4DxK85fa9nWVQcJTq9Ss/Sheet1";
+const CALENDAR_ID = "theskilltransferagency@gmail.com";
+const API_KEY = "AIzaSyC7CDnaXWOO3STqrwwF7yazaoIcdJ6Zwn0";
 const REGISTER_URL = "https://forms.gle/NygFY2QA3te5eXHG9";
 
 function Events() {
