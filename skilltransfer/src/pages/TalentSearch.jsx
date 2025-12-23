@@ -23,7 +23,7 @@ function TalentSearch() {
           <button
             className="talent-cta-btn"
             onClick={() =>
-              window.open("https://forms.gle/3kdqp5haJJMneg1z9", "_blank")
+              window.open("https://docs.google.com/forms/d/e/1FAIpQLSd8-T8CgOMOO0EOM2UiRrvYYupYbsnkwC1fskut-Cvdy2pRnA/viewform", "_blank")
             }
           >
             Find Talent
@@ -251,7 +251,7 @@ function TalentSearch() {
 
         <div className="partner-buttons">
           {/* <button className="partner-btn-secondary">Post a Job</button> */}
-          <button className="partner-btn-primary">Schedule a Session</button>
+          <button className="partner-btn-primary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd8-T8CgOMOO0EOM2UiRrvYYupYbsnkwC1fskut-Cvdy2pRnA/viewform", "_blank")}>Schedule a Session</button>
         </div>
       </section>
 

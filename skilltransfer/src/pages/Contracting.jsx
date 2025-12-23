@@ -23,7 +23,7 @@ function Contracting() {
           <p className="contracting-hero-description">
             Adapt to changing business demands with confidence. SkillTransfer Academy provides contract-based staffing solutions that give you access to skilled professionals when and where you need them most.
           </p>
-          <button className="contracting-cta-btn">Hire Contract Talent | Request a Quote</button>
+          <button className="contracting-cta-btn" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd8-T8CgOMOO0EOM2UiRrvYYupYbsnkwC1fskut-Cvdy2pRnA/viewform", "_blank")}>Hire Contract Talent | Request a Quote</button>
         </div>
       </section>
       
@@ -135,8 +135,8 @@ function Contracting() {
         </div>
         
         <div className="flexible-team-buttons">
-          <button className="team-btn-secondary">Request Talent</button>
-          <button className="team-btn-primary">Book Consultation</button>
+          <button className="team-btn-secondary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd8-T8CgOMOO0EOM2UiRrvYYupYbsnkwC1fskut-Cvdy2pRnA/viewform", "_blank")}>Request Talent</button>
+          {/* <button className="team-btn-primary">Book Consultation</button> */}
         </div>
       </section>
       

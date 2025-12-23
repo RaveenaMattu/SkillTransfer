@@ -67,7 +67,7 @@ function Header() {
             {contactOpen && (
               <div className="dropdown-menu">
                 <a
-                  href="https://forms.gle/NygFY2QA3te5eXHG9"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeOEyWXNlGZOCKc_tnWyYBEaN5vmqwGFOZApB09YjJlA5gGYg/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setContactOpen(false)}

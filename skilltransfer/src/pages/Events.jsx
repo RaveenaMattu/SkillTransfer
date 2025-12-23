@@ -7,7 +7,7 @@ const RESOURCES_SHEET =
   "https://opensheet.elk.sh/1fgMd-NbDAC6D9Oc6DKeOY1c4DxK85fa9nWVQcJTq9Ss/Sheet1";
 const CALENDAR_ID = "theskilltransferagency@gmail.com";
 const API_KEY = "AIzaSyC7CDnaXWOO3STqrwwF7yazaoIcdJ6Zwn0";
-const REGISTER_URL = "https://forms.gle/NygFY2QA3te5eXHG9";
+const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeOEyWXNlGZOCKc_tnWyYBEaN5vmqwGFOZApB09YjJlA5gGYg/viewform";
 
 function Events() {
   const [resources, setResources] = useState([]);
@@ -21,6 +21,7 @@ function Events() {
       .then((res) => res.json())
       .then((data) => {
         setResources(data.filter((r) => r.Visible?.toLowerCase() === "yes"));
+
         setLoadingResources(false);
       })
       .catch(() => setLoadingResources(false));
@@ -92,7 +93,7 @@ function Events() {
           {/* Google Calendar */}
           <div className="calendar-wrapper">
             <iframe
-              src="https://calendar.google.com/calendar/embed?src=theskilltransferacademy%40gmail.com&ctz=America%2FToronto"
+              src="https://calendar.google.com/calendar/embed?src=theskilltransferagency%40gmail.com&ctz=America%2FToronto"
               width="100%"
               height="400"
               frameBorder="0"
