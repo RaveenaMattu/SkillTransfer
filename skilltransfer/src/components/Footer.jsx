@@ -179,10 +179,10 @@ function Footer() {
             © 2025 The SkillTransfer Agency. All Rights Reserved.
           </p>
           <div className="footer-links">
-            <a href="privacy.jsx" className="footer-link">
+            <a href="/privacy-policy" className="footer-link">
               Privacy Policy
             </a>
-            <a href="terms.jsx" className="footer-link">
+            <a href="/terms" className="footer-link">
               Terms of Use
             </a>
           </div>
