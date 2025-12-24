@@ -350,3 +350,17 @@
     padding: 50px;
   }
 }
+@media (max-width: 450px) {
+  .hero-title {
+    font-size: 1.8em;
+  }
+  .hero-description {
+    font-size: 0.9em;
+  }
+  .hero-image {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}

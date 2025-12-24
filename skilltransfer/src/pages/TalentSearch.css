@@ -281,13 +281,13 @@
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  max-width: 1728px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .partner-content {
   flex: 1;
-  max-width: 843px;
+  max-width: 1728px;
 }
 
 .partner-title {
