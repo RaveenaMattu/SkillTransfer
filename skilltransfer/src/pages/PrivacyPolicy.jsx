@@ -1,17 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./PrivacyPolicy.css";
 
 function PrivacyPolicy() {
   return (
     <div className="privacy-page">
-      {/* Header – Logo only */}
-      <header className="privacy-header">
-        <Link to="/" className="privacy-logo">
-          <img src="/logo.png" alt="The SkillTransfer Agency" />
-        </Link>
-      </header>
+      <Header />
 
       {/* Content */}
       <main className="privacy-content">

@@ -6,6 +6,7 @@ import TalentSearch from './pages/TalentSearch';
 import Contracting from './pages/Contracting';
 import Events from './pages/Events';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contracting" element={<Contracting />} />
           <Route path="/events" element={<Events />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
         </Routes>
       </div>
     </Router>
