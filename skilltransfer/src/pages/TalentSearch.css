@@ -276,7 +276,7 @@
 
 .partner-section {
   background: #DDEEFF;
-  padding: 80px 100px;
+  padding-right: 19%;;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,6 +288,7 @@
 .partner-content {
   flex: 1;
   max-width: 1728px;
+  padding: 0 12%;
 }
 
 .partner-title {

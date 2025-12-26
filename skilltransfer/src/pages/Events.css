@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 30px;
   padding: 40px 150px;
+  height: 100vh;
 }
 
 /* LEFT – Resources */

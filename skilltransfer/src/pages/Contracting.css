@@ -139,9 +139,7 @@
 }
 
 .contracting-process-section {
-  padding: 100px 80px;
-  max-width: 1728px;
-  margin: 0 auto;
+  padding: 5% 13%;
   background: #f9f9f9;
 }
 
@@ -230,7 +228,6 @@
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
-  margin-left: 595px;
 }
 
 .benefits-list {
@@ -259,13 +256,11 @@
 
 .flexible-team-section {
   background: #ddeeff;
-  padding: 80px 150px;
+  padding: 5% 13%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 60px;
-  max-width: 1728px;
-  margin: 0 auto;
+  gap: 23%;
 }
 
 .flexible-team-content {
